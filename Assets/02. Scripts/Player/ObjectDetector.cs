@@ -4,6 +4,8 @@ using UnityEngine;
 public class ObjectDetector : MonoBehaviour
 {
     [SerializeField] private Object _nearest = null;               //가장 가까운 물체
+    public Object Nearest {  get { return _nearest; } } 
+
 
     private HashSet<Object> m_objects = new HashSet<Object>();           //NPC HashSet
 
