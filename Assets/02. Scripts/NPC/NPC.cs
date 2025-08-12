@@ -1,16 +1,6 @@
 using UnityEngine;
 
-public class NPC : MonoBehaviour
+public class NPC : Object
 {
-    [SerializeField] private NearSign nameCanvas;
-    public NearSign NameCanvas { get {return nameCanvas; } }
-
-
-    private void Awake()
-    {
-        if (nameCanvas == null)
-        {
-            nameCanvas = GetComponentInChildren<NearSign>();
-        }
-    }
+    
 }
